@@ -1,0 +1,229 @@
+{
+  "main": {
+    "id": "da36936502851f57",
+    "type": "split",
+    "children": [
+      {
+        "id": "587f898d375df708",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "859b1dabd97fa241",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "quizzes/03-026 Amazon S3 Security - Bucket Policy - Quiz.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "03-026 Amazon S3 Security - Bucket Policy - Quiz"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5168f496f5a91b5a",
+    "type": "split",
+    "children": [
+      {
+        "id": "9d6d8476443cb8c2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f9e6b0e141edb3c3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "f1148c3966fd572f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "3b6387a4d26143c7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 421.5
+  },
+  "right": {
+    "id": "676878509410636a",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e7f69b10bfb5fd1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3ebda87ac6f84ff0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos"
+            }
+          },
+          {
+            "id": "a47fd19eb821e5a2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída"
+            }
+          },
+          {
+            "id": "cd405c2470504978",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "30f650c2b8852814",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas as propriedades"
+            }
+          },
+          {
+            "id": "b713e0fa6b19aee3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Flashcards/Sem título.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de Sem título"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "simple-quiz:Run quiz": false,
+      "quiz-generator:Open generator": false
+    }
+  },
+  "active": "f9e6b0e141edb3c3",
+  "lastOpenFiles": [
+    "quizzes/03-025 Amazon S3 - Hands On - Quiz.md",
+    "quizzes/03-026 Amazon S3 Security - Bucket Policy - Quiz.md",
+    "quizzes/03-024 Amazon S3 - Quiz.md",
+    "Quiz Sample.md",
+    "quizzes/03-024 Amazon S3 - Quiz.md.md",
+    "quizzes/03-024 Amazon S3 - Quizs.md",
+    "quizzes",
+    "sumario/Seção 05 - Sumário.md",
+    "Flashcards/Sem título.md",
+    "sumario/Seção 04 - Sumário.md",
+    "sumario/Seção 03 - Sumário.md",
+    "Flashcards",
+    "transcrições/Seção 03 - Storage/03-021 Intro- Storage.md",
+    "sumario",
+    "transcrições/Seção 17 - Wrapping Up/17-313 Thank you!.md",
+    "transcrições/Seção 17 - Wrapping Up/17-312 AWS Certification Paths.md",
+    "transcrições/Seção 17 - Wrapping Up/17-311 Get an Extra 30 Minutes on your AWS Exam - Non Native English Speakers Only.md",
+    "transcrições/Seção 17 - Wrapping Up/17-310 Save 50_ on your AWS Exam Cost!.md",
+    "transcrições/Seção 17 - Wrapping Up/17-308 General AWS Certification Exam Tips.md",
+    "transcrições/Seção 17 - Wrapping Up/17-309 Exam Walkthrough and Signup.md",
+    "transcrições/Seção 17 - Wrapping Up/17-306 Intro- Wrapping Up.md",
+    "transcrições/Seção 17 - Wrapping Up/17-307 Reviewing the Exam Guide (and other AWS resources).md",
+    "transcrições/Seção 15 - Everything Else/15-305 Amazon API Gateway - Hands On.md",
+    "transcrições/Seção 15 - Everything Else/15-304 Amazon API Gateway.md",
+    "transcrições/Seção 15 - Everything Else/15-303 AWS Cost Explorer.md",
+    "transcrições/Seção 15 - Everything Else/15-302 AWS Budgets - Hands On.md",
+    "transcrições/Seção 15 - Everything Else/15-301 AWS Budgets.md",
+    "transcrições/Seção 15 - Everything Else/15-300 Intro- Everything Else.md",
+    "transcrições/Seção 14 - Developer Tools/14-298 AWS CodeBuild.md",
+    "transcrições/Seção 17 - Wrapping Up",
+    "transcrições/Seção 15 - Everything Else",
+    "transcrições/Seção 14 - Developer Tools",
+    "transcrições/Seção 13 - Machine Learning",
+    "transcrições/Seção 12 - Management and Governance",
+    "transcrições/Seção 11 - Networking and Content Delivery",
+    "transcrições/Seção 10 - Security, Identity, and Compliance",
+    "Seção 02 - Data Engineering Fundamentals/02-000 Mapa Mental - Data Engineering Fundamentals.canvas",
+    "Seção 02 - Data Engineering Fundamentals/Sem título.canvas"
+  ]
+}
