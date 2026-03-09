@@ -69,6 +69,12 @@ Regras de conteúdo:
 - Cobrir conceitos-chave, definições, comparações e práticas.
 - Misturar tipos: múltipla escolha, verdadeiro/falso, associação, múltiplas respostas.
 
+Regras adicionais de foco (certificação AWS Data Engineer):
+- Todo quiz deve ser elaborado com visão de preparação para a certificação **AWS Data Engineer**.
+- Priorizar perguntas situacionais (cenários) em que você precise escolher e aplicar recursos da AWS para resolver problemas reais de engenharia de dados.
+- Incluir questões que exijam decisão técnica entre serviços (ex.: ingestão, processamento, armazenamento, catálogo, governança, segurança, monitoramento e custo).
+- As perguntas devem reforçar raciocínio de arquitetura e troubleshooting, não apenas definição teórica.
+
 Regras de formatação (callouts):
 - Pergunta na mesma linha de `> [!question] ...`.
 - Sem linha em branco indevida dentro do bloco.
