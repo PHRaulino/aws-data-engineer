@@ -85,6 +85,7 @@ Quando o usuário solicitar geração de perguntas para uma aula:
 2. Ler o `sumario/` da seção correspondente.
 3. Ler a transcrição da aula em `Transcrições/`.
 4. Gerar um arquivo CSV com perguntas baseado no conteúdo.
+5. A liguagem das perguntas deve ser em Português.
 
 ---
 

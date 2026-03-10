@@ -2,136 +2,150 @@
 description: Workflow de Geração de Quiz por Aula
 ---
 
-Contexto:
 
-* O workspace possui transcrições de aulas dentro da pasta `transcrições/`.
-* Existe uma pasta `quizzes/` na raiz do projeto destinada à criação de quizzes baseados nas aulas.
-* Os quizzes devem ser utilizados como ferramenta de estudo e revisão do conteúdo.
+Quando o usuário solicitar geração de perguntas para uma aula:
 
-Estrutura esperada:
-
-transcrições/
-
-* Seção XX/
-
-  * XX-XXX Nome da Aula.md
-
-quizzes/
-
-* XX-XXX Nome da Aula - Quiz.md
-
-Objetivo:
-
-* Gerar um quiz completo baseado no conteúdo de uma aula específica para reforçar o aprendizado e revisar os principais conceitos apresentados pelo instrutor.
-
-Regra obrigatória:
-
-* Sempre que o usuário solicitar a criação de um quiz para uma aula, o arquivo deve ser criado dentro da pasta `quizzes/`.
-* O agente nunca deve modificar os arquivos dentro de `transcrições/`.
-
-Comportamento esperado:
-
-1. Identificar a aula indicada pelo usuário.
-2. Localizar a transcrição da aula dentro de `transcrições/`.
-3. Consultar também o sumário da seção correspondente em `sumario/` para entender o contexto geral da aula.
-4. Ler a transcrição da aula e identificar:
-
-   * conceitos principais
-   * definições importantes
-   * práticas recomendadas
-   * comparações ou diferenças entre tecnologias
-   * exemplos explicados pelo instrutor
-5. Gerar um quiz completo cobrindo os pontos principais da aula.
-6. Criar ou atualizar o arquivo de quiz correspondente dentro da pasta `quizzes/`.
-
-Formato do arquivo:
-
-O quiz deve seguir exatamente esta estrutura:
+1. Identificar a aula.
+2. Ler o `sumario/` da seção correspondente.
+3. Ler a transcrição da aula em `Transcrições/`.
+4. Gerar um arquivo CSV com perguntas baseado no conteúdo.
+5. A liguagem das perguntas deve ser em Português.
 
 ---
 
-sources:
+# Local do arquivo gerado
 
-* "[[Nome da Aula]]"
+O CSV deve ser salvo em: quizzes_csv/XX-XXX Nome da Aula.csv
+
+
+Cada linha do CSV representa **uma pergunta**.
 
 ---
+
+# Estrutura obrigatória do CSV
+
+O arquivo deve seguir exatamente o seguinte formato: question,ref,answer,option_a,option_b,option_c,option_d
+
+
+---
+
+# Significado das colunas
+
+| coluna | descrição |
+|------|------------|
+| question | pergunta |
+| ref | aula utilizada como referência |
+| answer | alternativa correta (A,B,C ou D) |
+| option_a | alternativa A |
+| option_b | alternativa B |
+| option_c | alternativa C |
+| option_d | alternativa D |
+
+---
+
+# Regras para perguntas verdadeiro ou falso
+
+Para perguntas **True / False**:
+answer = A (verdadeiro)
+answer = B (falso)
+
+Formato obrigatório:
+
+option_a = Verdadeiro
+option_b = Falso
+option_c =
+option_d =
+
+
+---
+
+# Regras obrigatórias de geração de perguntas
+
+Para **cada aula**:
+
+- gerar no mínimo **10 perguntas**
+- idealmente entre **10 e 20 perguntas**
 
 Tipos de perguntas permitidos:
 
-* múltipla escolha
-* verdadeiro ou falso
-* associação de conceitos
-* perguntas de múltiplas respostas
+- múltipla escolha
+- verdadeiro ou falso
+- cenários de arquitetura
+- troubleshooting
+- escolha de serviços AWS
 
-Exemplo de estrutura:
+---
 
-> [!question] Pergunta de múltipla escolha
-> a) opção A
-> b) opção B
-> c) opção C
-> d) opção D
->
-> > [!success]- Answer
-> > resposta correta
+# Foco obrigatório — Certificação AWS Data Engineer
 
-> [!question] Pergunta de múltiplas respostas
-> a) opção A
-> b) opção B
-> c) opção C
-> d) opção D
->
-> > [!success]- Answer
-> > a) opção A
-> > c) opção C
+Todas as perguntas devem ser elaboradas com mentalidade de **certificação AWS Data Engineer**.
 
-> [!question] Associação de conceitos
->
-> > [!example] Group A
-> > a) termo
-> > b) termo
->
-> > [!example] Group B
-> > x) definição
-> > y) definição
->
-> > [!success]- Answer
-> > a) -> x)
-> > b) -> y)
+Priorizar perguntas que envolvam:
 
-> [!question] Verdadeiro ou falso
->
-> > [!success]- Answer
-> > True
+- ingestão de dados
+- processamento de dados
+- armazenamento de dados
+- catálogo de dados
+- governança
+- segurança e IAM
+- monitoramento e observabilidade
+- otimização de custo
+- troubleshooting de pipelines
 
-Diretrizes de geração do quiz:
-
-* O quiz deve conter entre **6 e 10 perguntas**.
-* As perguntas devem cobrir os conceitos mais importantes da aula.
-* Sempre incluir diferentes tipos de perguntas permitidos.
-* As respostas devem ser claras e objetivas.
-* As perguntas devem priorizar entendimento conceitual.
-
-Referências obrigatórias:
-
-* O campo `sources` deve conter um link para a aula utilizando o padrão do Obsidian.
+Sempre que possível, usar **perguntas situacionais (cenários)**.
 
 Exemplo:
 
----
-
-sources:
-
-* "[[10-209 Key Salting]]"
+> Uma empresa precisa ingerir dados em tempo real com baixa latência e processar em Spark. Qual serviço AWS é mais apropriado?
 
 ---
 
-Diretrizes adicionais:
+# Caso a aula seja introdutória
 
-* Sempre utilizar o padrão de links do Obsidian `[[...]]`.
-* O quiz deve servir como ferramenta de revisão do conteúdo da aula.
-* As perguntas devem focar em entendimento conceitual e não apenas memorização literal.
-* O conteúdo deve refletir fielmente o que foi explicado na aula.
+Se o conteúdo da aula for:
 
-Resultado esperado:
+- introdução
+- overview de conceitos
+- explicação superficial
 
-* Um arquivo de quiz completo dentro da pasta `quizzes/` que permita revisar rapidamente os conceitos mais importantes da aula dentro do Obsidian.
+Mesmo assim gerar **mínimo 10 perguntas**, focando em:
+
+- entendimento arquitetural
+- comparações entre serviços
+- aplicação prática dos conceitos
+- cenários derivados dos conceitos apresentados
+
+---
+
+# Regras de qualidade das perguntas
+
+As perguntas devem:
+
+- ser claras e objetivas
+- ter apenas **uma resposta correta**
+- evitar ambiguidades
+- refletir cenários reais de engenharia de dados
+- ajudar na preparação para exames AWS
+
+---
+
+# Exemplo de CSV gerado
+
+question,ref,answer,option_a,option_b,option_c,option_d
+Which AWS service is best suited for serverless ETL processing?,AWS Glue Introduction,A,AWS Glue,Amazon EMR,AWS Lambda,Amazon Athena
+A company needs to query data directly from S3 using SQL without managing infrastructure. Which service should be used?,AWS Glue Introduction,C,Amazon Redshift,AWS Glue,Amazon Athena,Amazon EMR
+AWS Glue Data Catalog can be used as a centralized metadata repository for analytics services.,AWS Glue Introduction,A,Verdadeiro,Falso,,
+Which service is best suited for large-scale distributed Spark workloads with full cluster control?,AWS Glue Introduction,B,AWS Glue,Amazon EMR,Amazon Athena,AWS Lambda
+
+
+---
+
+# Checklist rápido de validação
+
+Antes de concluir qualquer tarefa:
+
+- [ ] Nenhum arquivo em `Transcrições/` foi alterado
+- [ ] O sumário da seção (`sumario/`) foi consultado
+- [ ] O CSV foi salvo no diretório correto (`quizzes_csv/`)
+- [ ] Existem pelo menos **10 perguntas**
+- [ ] Todas as perguntas seguem foco da certificação **AWS Data Engineer**

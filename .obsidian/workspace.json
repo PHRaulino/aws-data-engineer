@@ -183,6 +183,9 @@
   },
   "active": "f9e6b0e141edb3c3",
   "lastOpenFiles": [
+    "quizzes_csv/03-030 Amazon S3 - Replication.csv",
+    "quizzes_csv/03-028 Amazon S3 - Versioning.csv",
+    "quizzes_csv",
     "bkp_quizzes/17-313 Thank you! - Quiz.md",
     "bkp_quizzes/17-312 AWS Certification Paths - Quiz.md",
     "bkp_quizzes/17-311 Get an Extra 30 Minutes on your AWS Exam - Non Native English Speakers Only - Quiz.md",
@@ -208,7 +211,6 @@
     "bkp_quizzes/13-288 Amazon Kendra - Quiz.md",
     "bkp_quizzes/13-287 Amazon Q Apps - Quiz.md",
     "bkp_quizzes/13-286 Amazon Q Business - Hands On - Quiz.md",
-    "bkp_quizzes/13-285 Amazon Q Business - Quiz.md",
     "bkp_quizzes",
     "quizzes",
     "Flashcards",
@@ -217,8 +219,6 @@
     "transcrições/Seção 15 - Everything Else",
     "transcrições/Seção 14 - Developer Tools",
     "transcrições/Seção 13 - Machine Learning",
-    "transcrições/Seção 12 - Management and Governance",
-    "transcrições/Seção 11 - Networking and Content Delivery",
     "Seção 02 - Data Engineering Fundamentals/02-000 Mapa Mental - Data Engineering Fundamentals.canvas",
     "Seção 02 - Data Engineering Fundamentals/Sem título.canvas"
   ]
