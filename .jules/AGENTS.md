@@ -54,6 +54,11 @@ Regras do quiz:
 - Incluir múltipla escolha, V/F, associação e múltiplas respostas.
 - Em perguntas abertas, resposta curta e objetiva.
 
+Diretriz extra de preparação para certificação:
+- Todo quiz deve ser gerado com foco em preparação para a certificação **AWS Data Engineer**.
+- Priorizar questões de cenário e resolução de problemas, exigindo escolha e uso de serviços AWS para fixar o conteúdo da aula.
+- Cobrar decisões de arquitetura e operação (serviço correto, trade-offs, segurança, governança, desempenho e custo).
+
 Formatação obrigatória dos callouts:
 - `> [!question]` com enunciado na mesma linha.
 - Sem quebra indevida no bloco.
