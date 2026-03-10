@@ -1,0 +1,102 @@
+[
+  {
+    "character": "Host",
+    "text": "Bem-vindo ao episódio de hoje. *pausa curta* O tema é 17-307 Reviewing the Exam Guide (and other AWS resources). Vamos converter a aula em estratégia de implementação, operação e aprovação de arquitetura para o contexto da certificação AWS Data Engineer."
+  },
+  {
+    "character": "Curioso",
+    "text": "Antes de mergulhar no detalhe técnico, quero clareza: qual problema de negócio essa aula ajuda a resolver quando o time está pressionado por prazo e qualidade?"
+  },
+  {
+    "character": "Especialista",
+    "text": "Ótima abertura. O conteúdo aponta para desafios de escala, confiabilidade e governança. Os termos recorrentes da transcrição são você, portanto, eles, exame, lista, pode, dados. Isso indica que a aula não está isolada; ela participa de uma cadeia de dados com múltiplos pontos de falha e múltiplas decisões de otimização."
+  },
+  {
+    "character": "Host",
+    "text": "Dentro da trilha da seção 17, os marcos de estudo incluem: sumário da seção não encontrado; usando exclusivamente os sinais da transcrição.. *ênfase leve* Repare como a progressão vai de conceito para implementação e depois para operação em produção."
+  },
+  {
+    "character": "Especialista",
+    "text": "Conceito-chave: serviço não é resposta, critério é resposta. Você precisa mapear requisito funcional, requisito não funcional e risco operacional antes de escolher tecnologia. Sem isso, surgem pipelines frágeis, custos imprevisíveis e baixa confiança analítica."
+  },
+  {
+    "character": "Curioso",
+    "text": "Quais perguntas de arquitetura eu devo fazer no começo para evitar retrabalho depois?"
+  },
+  {
+    "character": "Especialista",
+    "text": "Pergunte: qual latência aceitável? qual volume diário e pico? qual política de retenção? como será controle de acesso? como rastrear lineage e auditoria? Com essas respostas, você decide padrão de ingestão, frequência de transformação, organização de camadas e estratégia de observabilidade."
+  },
+  {
+    "character": "Host",
+    "text": "Agora traz um cenário realista no estilo da prova."
+  },
+  {
+    "character": "Especialista",
+    "text": "Cenário: uma empresa global coleta eventos de aplicações, precisa enriquecer dados quase em tempo real e alimentar times de BI e ciência de dados sem quebrar compliance. A solução tende a combinar ingestão resiliente, transformação escalável, catálogo centralizado, políticas de governança e consultas eficientes para múltiplos consumidores."
+  },
+  {
+    "character": "Curioso",
+    "text": "Quando duas opções parecem corretas, como eu desempato tecnicamente?"
+  },
+  {
+    "character": "Especialista",
+    "text": "Desempate por critérios objetivos: overhead operacional, elasticidade, integração com IAM/KMS, limites de throughput, modelo de cobrança, suporte a schemas evolutivos, facilidade de troubleshooting e aderência a requisitos de soberania de dados. Em questões, o detalhe decisivo quase sempre está numa restrição aparentemente secundária."
+  },
+  {
+    "character": "Host",
+    "text": "Vamos detalhar governança e segurança, porque isso pesa muito na prática."
+  },
+  {
+    "character": "Especialista",
+    "text": "Governança começa no design: nomenclatura consistente, versionamento de datasets, ownership claro e políticas de acesso por domínio. Segurança exige menor privilégio, criptografia ponta a ponta, segmentação de rede e trilha auditável. *pausa curta* Sem isso, o pipeline pode até funcionar, mas não passa em auditoria nem escala com confiança."
+  },
+  {
+    "character": "Curioso",
+    "text": "E custo? Como evitar surpresas quando o uso cresce rápido?"
+  },
+  {
+    "character": "Especialista",
+    "text": "Custo em engenharia de dados é multidimensional: computação, armazenamento, transferência, reprocessamento e operação humana. Otimize formato de arquivo, particionamento e compressão; aplique lifecycle policy; monitore uso por tags e contas; e crie alarmes de desvio. O segredo é governança financeira contínua, não ajuste pontual."
+  },
+  {
+    "character": "Host",
+    "text": "Fala de observabilidade orientada a ação."
+  },
+  {
+    "character": "Especialista",
+    "text": "Não basta coletar métricas: você precisa de sinais acionáveis. Defina SLOs de atraso, completude e qualidade; implemente alertas com contexto; mantenha dashboards por etapa do pipeline; e conecte eventos de erro a runbooks claros. Assim, o time resolve incidente com menos ruído e aprende com cada falha."
+  },
+  {
+    "character": "Curioso",
+    "text": "Qual runbook mínimo você recomenda quando o pipeline quebra de madrugada?"
+  },
+  {
+    "character": "Especialista",
+    "text": "Sequência prática: validar IAM e credenciais; testar conectividade e políticas de rede; confirmar schema e contrato de dados; inspecionar logs, métricas e traces; verificar quotas e concorrência; checar idempotência e duplicidade; e só então aplicar correção. *mudança de tom* Esse método evita apagar incêndio criando dívida técnica."
+  },
+  {
+    "character": "Host",
+    "text": "Tem algum anti-pattern clássico que devo evitar a qualquer custo?"
+  },
+  {
+    "character": "Especialista",
+    "text": "Vários: acoplar demais ingestão e transformação; ignorar qualidade de dados na entrada; usar configuração manual sem IaC; não versionar regras de transformação; depender de conhecimento tribal para operar; e tratar segurança como tarefa final. Esses erros parecem acelerar no início, mas cobram juros altos em produção."
+  },
+  {
+    "character": "Curioso",
+    "text": "Como transformar essa aula em plano de estudo ativo para certificação?"
+  },
+  {
+    "character": "Especialista",
+    "text": "Faça três blocos de revisão: decisões arquiteturais, operação e custos. Em cada bloco, escreva perguntas situacionais com trade-offs explícitos. Depois compare serviços alternativos e justifique por que um vence no cenário dado. Esse exercício replica exatamente o raciocínio exigido em prova e entrevistas técnicas."
+  },
+  {
+    "character": "Host",
+    "text": "Fechamento: 17-307 Reviewing the Exam Guide (and other AWS resources) reforça competências centrais de engenharia de dados na AWS. Conecte este conteúdo com as próximas aulas da seção 17, pratique decisões orientadas por requisitos e mantenha foco em confiabilidade, segurança e custo. *pausa curta* Assim você evolui de usuário de serviço para arquiteto de soluções de dados."
+  },
+  {
+    "character": "Especialista",
+    "text": "Checklist final para levar desta aula: defina requisitos de latência e qualidade, escolha serviços com base em trade-offs reais, implemente segurança desde o início, monitore custo por domínio e automatize operação com infraestrutura como código. *ênfase leve* Em seguida, valide a arquitetura com um cenário de falha controlada para testar resiliência, observabilidade e recuperação. Esse fechamento transforma conhecimento teórico em capacidade prática, exatamente o que diferencia quem passa na certificação com confiança."
+  }
+]
